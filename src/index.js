@@ -11,10 +11,10 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildVoiceStates,
         Discord.GatewayIntentBits.GuildMessageReactions,
         Discord.GatewayIntentBits.GuildEmojisAndStickers,
-    ]
+    ],
+    partials: [Discord.Partials.User, Discord.Partials.Channel, Discord.Partials.GuildMember, Discord.Partials.Message, Discord.Partials.Reaction]
 });
 
-client.snipes = new Discord.Collection();
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 

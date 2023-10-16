@@ -4,7 +4,7 @@ module.exports = {
     name: Events.ClientReady,
     once: true,
     execute(client) {
-        console.log(`${client.user.tag} is ready, fellas! (⁠⌐⁠■⁠-⁠■⁠)`);
+        console.log(`\n${client.user.tag} is ready, fellas! (⁠⌐⁠■⁠-⁠■⁠)`);
 
         const activities = [
             { name: `What are you looking at..? ಠ_ಠ`, type: ActivityType.Custom },
